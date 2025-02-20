@@ -1,2 +1,5 @@
-# 25-1-comp-dist
+# Computação Distribuída
+
+
 Repositório da disciplina "Computação Distribuída" - 2025.1 - Turma 06G
+
