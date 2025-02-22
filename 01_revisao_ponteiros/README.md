@@ -9,14 +9,14 @@ Nesta aula, vamos revisar:
 - **Passagem de ponteiros em funções:** Como utilizar ponteiros para modificar variáveis e trabalhar com estruturas de dados.
 - **Exemplos práticos:** Códigos comentados para fixação dos conceitos.
 
-O foco é desenvolver uma compreensão sólida sobre como e por que utilizar ponteiros, mostrando aplicações práticas e exemplos que facilitam o entendimento.
+Foco: desenvolver uma compreensão sólida sobre como e por que utilizar ponteiros, com exemplos que facilitam o entendimento.
 
 ---
 
 ## 2. Conceitos Básicos de Ponteiros
 
 ### 2.1 O que é um ponteiro?
-Um ponteiro é uma variável que armazena o endereço de memória de outra variável. Em C, isso permite manipular diretamente a memória e criar estruturas de dados dinâmicas.
+Um ponteiro é uma variável que armazena o **endereço de memória** de outra variável. Em C, isso permite manipular diretamente a memória e criar estruturas de dados dinâmicas.
 
 ### 2.2 Declaração e Inicialização
 Para declarar um ponteiro, usamos o operador `*`. Por exemplo:
@@ -69,7 +69,7 @@ Usar ponteiros em funções permite:
 
 ### 4.2 Passagem de Ponteiros para Modificar Variáveis
 
-Exemplo: função que troca os valores de duas variáveis.
+Ex: função que troca os valores de duas variáveis.
 
 ```c
 #include <stdio.h>
@@ -89,7 +89,7 @@ int main() {
 }
 ```
 
-**Explicação:**  
+**Explicando...:**  
 - A função `trocar` recebe os endereços de `x` e `y`.
 - Ao desreferenciar (`*a` e `*b`), podemos acessar e modificar os valores originais.
 - A troca efetiva dos valores é feita sem retornar nenhum valor, demonstrando a passagem por referência.
@@ -115,7 +115,7 @@ int main() {
 }
 ```
 
-**Explicação:**  
+**Explicando...:**  
 - O array `numeros` é passado como um ponteiro para a função `imprimirArray`.
 - A função itera sobre o array usando o tamanho informado.
 
@@ -156,7 +156,7 @@ int main() {
 
 ### 5.1 Exemplo Prático: Soma de Elementos de um Array
 
-Crie uma função que receba um array e seu tamanho, e retorne a soma dos elementos usando ponteiros.
+Criar uma função que recebe um array e seu tamanho, e retone a soma dos elementos usando ponteiros.
 
 ```c
 #include <stdio.h>
@@ -177,12 +177,13 @@ int main() {
 }
 ```
 
-**Atividade:**  
-- Modifique a função para calcular a média dos elementos.
+**Atividade dada em sala:**  
+- Tente modificar a função para calcular a média dos elementos.
+
 
 ### 5.2 Exemplo Prático: Manipulação de Strings
 
-Manipule strings usando ponteiros. Lembre-se que strings em C são arrays de caracteres terminados em `'\0'`.
+Manipulação strings usando ponteiros. Lembrar que strings em C são arrays de caracteres terminados em `'\0'`.
 
 ```c
 #include <stdio.h>
@@ -202,8 +203,8 @@ int main() {
 }
 ```
 
-**Atividade:**  
-- Escreva uma função que inverta uma string utilizando ponteiros.
+**Atividade em sala:**  
+- Escrever uma função que inverta uma string utilizando ponteiros.
 
 ### 5.3 Exemplo Prático: Passagem de Estruturas por Ponteiro
 
@@ -232,20 +233,20 @@ int main() {
 }
 ```
 
-**Atividade:**  
+**Atividade em sala:**  
 - Adicione uma nova função que imprima os dados da estrutura, utilizando passagem por ponteiro.
 
 ---
 
 ## 6. Dicas e Boas Práticas
 
-- **Inicialize sempre seus ponteiros:** Sempre que declarar um ponteiro, tente inicializá-lo com `NULL` ou com o endereço de uma variável válida para evitar acessos indevidos à memória.
+- **Sempre inicialize seus ponteiros:** Sempre que declarar um ponteiro, tente inicializá-lo com `NULL` ou com o endereço de uma variável válida para evitar acessos indevidos à memória.
 - **Cuidado com a alocação dinâmica:** Ao usar `malloc`, `calloc` ou `realloc`, verifique se o retorno não é `NULL` e sempre libere a memória com `free` quando não for mais necessária.
 - **Cuidado com a aritmética de ponteiros:** Certifique-se de que os ponteiros apontem para a memória correta, especialmente ao trabalhar com arrays, para evitar erros de segmentação (segmentation fault).
 
 ---
 
-## 7. Conclusão
+## 7. Resumo
 
 Nesta aula, revisamos os conceitos essenciais dos ponteiros em C, incluindo:
 - Como declarar, inicializar e acessar ponteiros;
@@ -253,7 +254,6 @@ Nesta aula, revisamos os conceitos essenciais dos ponteiros em C, incluindo:
 - Passagem de ponteiros em funções para modificar variáveis e estruturas;
 - Exemplos práticos que demonstram a aplicação desses conceitos.
 
-Com esta revisão, espera-se que você se sinta mais confortável em utilizar ponteiros em seus programas em C, entendendo melhor as vantagens e os cuidados ao trabalhar com memória e passagem de dados por referência.
 
 **Exercício Final:**  
 Crie um programa que:
@@ -262,8 +262,9 @@ Crie um programa que:
 - Calcula e exibe a soma e a média dos valores;
 - Libera a memória alocada.
 
-Esta prática consolidará os conceitos revisados e permitirá a aplicação dos conhecimentos em um cenário real.
+Não é preciso entregar, mas é preciso fazer! 😃
+
 
 ---
 
-Boa revisão e bons códigos!
+Bons códigos!🧑‍💻
