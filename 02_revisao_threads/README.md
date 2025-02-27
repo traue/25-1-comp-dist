@@ -225,7 +225,7 @@ Simular uma corrida entre corredores utilizando threads. Cada thread representar
 ---
 
 **Tarefa:**  
-Implemente o programa completo em C conforme as especificações acima. Teste a execução várias vezes para observar que, devido ao tempo aleatório de cada thread, a ordem de chegada varia a cada execução, mas é sempre registrada de forma correta e sem problemas de concorrência.
+Implementar o programa completo em C conforme as especificações acima. Teste a execução várias vezes para observar que, devido ao tempo aleatório de cada thread, a ordem de chegada varia a cada execução, mas é sempre registrada de forma correta e sem problemas de concorrência.
 
 Boa programação e aproveite o desafio!
 
