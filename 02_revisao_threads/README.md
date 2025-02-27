@@ -231,7 +231,7 @@ Boa programação e aproveite o desafio!
 
 ---
 
-### Poissível solução do exercício
+### Possível solução do exercício
 
 
 Em breve ;)
