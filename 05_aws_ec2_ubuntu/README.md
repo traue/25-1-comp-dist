@@ -39,7 +39,7 @@ After=network.target
 [Service]
 Type=simple
 User=ubuntu
-ExecStart=/usr/bin/code-server --bind-addr 0.0.0.0:8080 --auth password --password mypassword
+ExecStart=/usr/bin/code-server --bind-addr 0.0.0.0:8080 --auth none
 Restart=always
 
 [Install]
