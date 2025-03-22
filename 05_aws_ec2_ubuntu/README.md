@@ -23,13 +23,14 @@ apt install -y openjdk-21-jdk openjdk-21-jre
 # Instala ferramentas de desenvolvimento em C
 apt install -y build-essential gcc g++ gdb make valgrind
 
-# Instala VSCode Server (web IDE)
-curl -fsSL https://code-server.dev/install.sh | sh
-
 # Instala o zip e o wget se não houve
 apt install -y zip && wget
 
 # Opcional daqui para baixo
+
+# Instala VSCode Server (web IDE)
+curl -fsSL https://code-server.dev/install.sh | sh
+
 # Inicia VSCode Server como serviço systemd
 cat <<EOF > /lib/systemd/system/code-server.service
 [Unit]
