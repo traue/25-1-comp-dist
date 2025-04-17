@@ -43,9 +43,11 @@ Implemente um programa MPI que siga os seguintes passos:
 
 Você pode usar a fórmula da soma dos quadrados para validar o resultado no processo root:
 
+```math
 \[
 \sum_{i=1}^{N} i^2 = \frac{N(N+1)(2N+1)}{6}
 \]
+```
 
 Para `N = 40`, essa fórmula gera o valor **esperado** da soma dos quadrados.
 
