@@ -51,7 +51,7 @@ Para `N = 40`, essa fórmula gera o valor **esperado** da soma dos quadrados.
 
 ---
 
-## ✅ Exemplo de Saída Esperada (parcial)
+## ✅ Exemplo de Saída Esperada (sugestão)
 
 ```bash
 Processo 0 recebeu: 1 2 3 4 5 6 7 8 9 10
