@@ -23,6 +23,9 @@ apt install -y openjdk-21-jdk openjdk-21-jre
 # Instala ferramentas de desenvolvimento em C
 apt install -y build-essential gcc g++ gdb make valgrind
 
+# Instala as bibliotecas do MPI
+sudo apt-get install openmpi-bin openmpi-common libopenmpi-dev
+
 # Instala o zip e o wget se não houve
 apt install -y zip && wget
 
