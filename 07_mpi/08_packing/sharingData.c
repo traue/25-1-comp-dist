@@ -52,3 +52,7 @@ int main(int argc, char* argv[]) {
     MPI_Finalize();  // Finaliza o ambiente MPI
     return 0;
 }
+
+
+// compilar: mpicc -o sharingData sharingData.c
+// executar: mpirun -np 4 ./sharingData
