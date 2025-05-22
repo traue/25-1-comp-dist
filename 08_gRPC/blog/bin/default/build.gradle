@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'com.google.protobuf' version '0.9.4'
+}
+
+group = 'br.com.traue'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:3.25.5"
+    }
+    plugins {
+        grpc {
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.72.0'
+        }
+    }
+    generateProtoTasks {
+        all()*.plugins {
+            grpc {}
+        }
+    }
+}
+// adicionar isso:
+sourceSets.main.java.srcDir layout.buildDirectory.dir('generated/source')
+
+dependencies {
+    runtimeOnly 'io.grpc:grpc-netty-shaded:1.72.0'
+    implementation 'io.grpc:grpc-protobuf:1.72.0'
+    implementation 'io.grpc:grpc-stub:1.72.0'
+    compileOnly 'org.apache.tomcat:annotations-api:6.0.53' // necessary for Java 9+
+
+    implementation 'org.mongodb:mongodb-driver-sync:4.5.0'
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
