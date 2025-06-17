@@ -259,7 +259,9 @@ out.flush();
 8.	Iterar e Refinar: Conforme os testes, os alunos podem precisar voltar a algum passo para corrigir parsing ou formatação. Incentive-os a usar prints no console para verificar valores (por exemplo, imprimir o conteúdo da resposta completa antes de enviar, para conferir os \r\n). Uma vez tudo funcionando para uma requisição simples, o objetivo principal está alcançado!
 
 
-## Atividzade (entregar via moodle)
+---
+
+## Atividade (entregar via moodle)
 
 Crie um servidor Web em Java que escute a porta 8082 e mapeia uma pasta chama "www" (dentro do projeto) usando o protocolo HTTP.
 
